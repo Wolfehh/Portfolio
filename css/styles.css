@@ -473,6 +473,12 @@ output {
 
 iframe {
   border: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 300px
 }
 
 summary {
