@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Ruby.json", {onProgress: UnityProgress});
+    </script>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -56,6 +61,9 @@
 				<div class="col-lg-12 ml-auto text-center" style="margin-bottom: 5vh;">
 					<iframe src="https://docs.google.com/document/d/1NL5unXmFCnxcuXoEMft0Y_o6nJ9jbn_6JY-VmvkZeqU/preview?pli=1" style="width:100%;height:100%;"></iframe>
 				</div>
+				<div class="webgl-content">
+				<div id="unityContainer" style="width: 1024px; height: 768px"></div>
+				</div>
 				</div>
 				</section>
 				<section class="page-section portfolio" id="portfolio">
@@ -109,9 +117,6 @@
 				</p>
 				<p class="lead mb-0">
                 <a class="white" href="https://huskygames.com/games/?game=ruby">Husky Games Page Download</a>
-				</p>
-				<p class="lead mb-0">
-                <a class="white" href="playruby.html">Play The Game (HTML5)</a>
 				</p>
 				</div>
 				</div>
